@@ -1,0 +1,36 @@
+/* Write your CSS here */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.mobile-home-icon-image {
+  width: 80%;
+  max-width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-home-icon-image {
+    display: none;
+  }
+}
+
+.desktop-home-icon-image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-home-icon-image {
+    width: 100%;
+    max-width: 1150px;
+    display: flex;
+  }
+}
